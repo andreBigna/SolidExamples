@@ -1,7 +1,8 @@
 ﻿namespace SolidExamples.SRP
 {
-    public class EmployeeManager
+    public class EmployeeBLL
     {
+        private readonly IEmployeeWageCalculator _employeeWageCalculator;
 
         /*
          * SRP: Single Responsibility Principle
@@ -12,21 +13,14 @@
          *  In breve: più i requisiti richiano di cambiare su una delle responsabilità della classe, più si rende necessario disaccoppiarle
          */
 
-        public double CalculatePayroll(int id, double hours)
+        public EmployeeBLL(IEmployeeWageCalculator employeeWageCalculator)
         {
-            var employee = GetEmployee(id);
-
-            return employee.Wage * hours;
+            _employeeWageCalculator = employeeWageCalculator;
         }
 
-        public void PersistToDb(Employee employee)
+        public double CalculateWage(int id, double hours)
         {
-            //WRITE ON DB
-        }
-
-        public Employee GetEmployee(int id)
-        {
-            return new Employee(id, "Tizio", 30);
+            return _employeeWageCalculator.CalculatePayroll(id, hours);
         }
 
 
