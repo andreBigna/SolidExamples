@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SolidExamples.SRP
 {
-    public interface IEmployeeDAL
+    public interface IEmployeeDal
     {
         void PersistToDb(Employee employee);
 

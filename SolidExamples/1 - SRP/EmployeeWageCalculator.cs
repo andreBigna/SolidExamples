@@ -8,16 +8,16 @@ namespace SolidExamples.SRP
 {
     public class EmployeeWageCalculator : IEmployeeWageCalculator
     {
-        private readonly IEmployeeDAL _employeeDAL;
+        private readonly IEmployeeDal _employeeDal;
 
-        public EmployeeWageCalculator(IEmployeeDAL employeeDAL)
+        public EmployeeWageCalculator(IEmployeeDal employeeDAL)
         {
-            _employeeDAL = employeeDAL;
+            _employeeDal = employeeDAL;
         }
 
         public double CalculatePayroll(int id, double hours)
         {
-            var employee = _employeeDAL.GetEmployee(id);
+            var employee = _employeeDal.GetEmployee(id);
 
             return employee.Wage * hours;
         }

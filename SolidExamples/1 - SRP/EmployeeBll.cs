@@ -1,6 +1,6 @@
 ﻿namespace SolidExamples.SRP
 {
-    public class EmployeeBLL
+    public class EmployeeBll
     {
         private readonly IEmployeeWageCalculator _employeeWageCalculator;
 
@@ -10,10 +10,10 @@
          *  Accentrando più di una responsabilità in un'unica classe, si crea rigidità e "accoppiamento" (coupling) di un comportamento con un altro, e il cambio di
          *  requisiti di uno dei comportamenti potrebbe sfociare in una modifica alla stessa classe e possibilmente anche a porzioni di codice che non interessano
          *  necessariamente all'ambito della modifica. 
-         *  In breve: più i requisiti richiano di cambiare su una delle responsabilità della classe, più si rende necessario disaccoppiarle
+         *  In breve: più i requisiti rischiano di cambiare su una delle responsabilità della classe, più si rende necessario disaccoppiarle
          */
 
-        public EmployeeBLL(IEmployeeWageCalculator employeeWageCalculator)
+        public EmployeeBll(IEmployeeWageCalculator employeeWageCalculator)
         {
             _employeeWageCalculator = employeeWageCalculator;
         }
