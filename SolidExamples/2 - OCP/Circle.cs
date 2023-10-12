@@ -15,7 +15,7 @@ namespace SolidExamples.OCP
 
         public void Draw()
         {
-            Console.WriteLine($"draws a {nameof(Circle)}");
+            System.Diagnostics.Debug.WriteLine($"draws a {nameof(Circle)}");
         }
     }
 }

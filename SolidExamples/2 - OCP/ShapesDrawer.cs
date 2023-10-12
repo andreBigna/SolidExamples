@@ -16,7 +16,8 @@
     {
         public void DrawShapes(IEnumerable<IShape> shapes)
         {
-            foreach (IShape shape in shapes)
+            IOrderedEnumerable<IShape> orderedShapes = shapes.Order(new ShapeComparer());
+            foreach (IShape shape in orderedShapes)
             {
                 shape.Draw();
             }

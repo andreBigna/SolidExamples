@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SolidExamples.SRP
+﻿namespace SolidExamples.SRP
 {
     public class EmployeeDal : IEmployeeDal
     {
         public void PersistToDb(Employee employee)
         {
-            //WRITE ON DB
+            System.Diagnostics.Debug.WriteLine("employee persisted to DB");
         }
 
         public Employee GetEmployee(int id)
         {
+            System.Diagnostics.Debug.WriteLine("employee read from DB");
+
             return new Employee(id, "Tizio", 30);
         }
 

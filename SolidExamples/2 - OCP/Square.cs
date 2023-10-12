@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SolidExamples.OCP
 {
-    public struct Square : IShape
+    public class Square : IShape
     {
         public double Side { get; set; }
 
@@ -15,7 +15,8 @@ namespace SolidExamples.OCP
 
         public void Draw()
         {
-            throw new NotImplementedException();
+            System.Diagnostics.Debug.WriteLine($"draws a {nameof(Square)}");
+
         }
     }
 }
