@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace SolidExamples.OCP
 {
-    public struct Circle
+    public class Circle : IShape
     {
         public double Radius { get; set; }
 
         public Point Center { get; set; }
 
+        public void Draw()
+        {
+            Console.WriteLine($"draws a {nameof(Circle)}");
+        }
     }
 }
