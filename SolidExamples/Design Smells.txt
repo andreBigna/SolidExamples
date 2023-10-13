@@ -1,0 +1,11 @@
+﻿Design Smells
+Al pari dei Code Smells, non sono veri e propri bug, ma indicano una serie di difetti strutturali che rendono il progetto instabile e difficile da mantenere, oltre ad altre problematiche più sottili.
+Nella fattispecie i Design Smells sono:
+- Rigidity: difficoltà nell'effettuare anche la più piccola modifica, più parti del software sono da adeguare più il software stesso sarà rigido.
+- Fragility: tendenza del software a "rompersi" in punti diversi rispetto a quelli modificati, anche non necessariamente collegati a livello concettuale.
+- Immobility: impossibilità di riutilizzare del codice, potenzialmente utile in altre parti del progetto, perchè troppo rischioso e/o faticoso da rifattorizzare.
+- Viscosity: caratteristica di un software che risulta più facile da modificare senza seguire il design (viscosity of code) oppure senza fare affidamento sull'ambiente di sviluppo perchè inefficiente
+			(viscosity of environment). In poche parole, quando è più facile fare la cosa sbagliata rispetto a quella giusta.
+- Needless Complexity: tipico di quando si vuole anticipare potenziali problemi e/o cambiamenti di requisiti, sovraccarica il software di strutture non utilizzate e quindi inutili.
+- Needless Repetition: codice usato alla "copia/incolla", senza essere mai rifattorizzato e creando molteplici possibili divergenze in caso di modifica.
+- Opacity: software scritto in modo poco chiaro, carico di Code Smells, che lo rendono difficile da comprendere e quindi da modificare.
