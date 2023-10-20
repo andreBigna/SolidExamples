@@ -1,0 +1,11 @@
+﻿LSP: Liskov Substitution Principle
+	"Subtypes must be substitutable for their base types"
+	LSP è il principio che maggiormente si concentra su ereditarietà e polimorfismo, perchè ci obbliga a ragionare sulla corretta organizzazione della gerarchia di classi base. 
+	Onde evitare di confondere questo principio con DIP (Dependency Inversion) bisogna pensare che LSP si riferisce esplicitamente a classi base e non ad interfacce.
+	Molto spesso è legato all'OCP dato che, la violazione di LSP, verosimilmente risulterà in una violazione anche di OCP, come vedremo nell'esempio. Questo perchè,
+	quando si parla di ereditarietà di classi base, si ha una "Is-A", vale a dire che una classe Duck è membro di una gerarchia se deriva da una superclasse Bird (Duck "Is-A" Bird)
+	Violando questa relazione conseguirebbe sia in una violazione di LSP (potremmo aspettarci che una nuova classe derivata non sia gestita a runtime) 
+	che di OCP (probabilmente sarà necessario fare type checking e/o casting)
+
+
+	fare esempio di abstract factory prendendo spunto da refactoring guru
