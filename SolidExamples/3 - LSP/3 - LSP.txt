@@ -8,4 +8,4 @@
 	che di OCP (probabilmente sarà necessario fare type checking e/o casting)
 
 
-	fare esempio di abstract factory prendendo spunto da refactoring guru
+	provare a risolvere con un proxy pattern
