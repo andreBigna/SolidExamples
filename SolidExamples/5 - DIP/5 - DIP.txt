@@ -1,0 +1,21 @@
+﻿DIP: Dependency Inversion Principle
+	"High-level modules should not depend on low-level modules. Both should depend on abstractions.
+	Abstractions should not depend upon details. Details should depend upon abstractions."
+	Una corretta stratificazione delle astrazioni, prevede che i moduli (possiamo pensare a "classi", per semplicità), si occupino di "orchestrare" un determinato flusso, ma che i dettagli di 
+	implementazione siano una prerogativa dei moduli di livello più basso. In caso contrario, come purtroppo spesso accade, i moduli di alto livello sono così legati a quelli di basso livello,
+	che un cambiamento in questi ultimi scaturirà quasi sicuramente in un cambiamento ad alto livello. Inoltre disabilita la possibilità di riutilizzare questi moduli in altre situazioni.
+	Per questo, si tende a layerizzare l'architettura del software in modo tale che ogni layer sia responsabile per le proprie competenze (SRP) e i layer comunichino tra loro tramite interfacce (DIP)
+
+				Policy Layer (High-Level) ------> Policy Service Interface
+															|
+															|
+															v
+												Mechanism Layer (Mid-Level) ------> Mechanism Service Interface
+																								|
+																								|
+																								v
+																					Utility Layer (Low-Level)
+	
+
+	Da non confondere con LSP, dato che DIP si basa su interfacce (Has-A), mentre LSP si basa su superclassi (Is-A).
+	
