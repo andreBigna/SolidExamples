@@ -1,6 +1,6 @@
-﻿SRP: Single Responsibility Principle
- "A class should have only one reason to change"
- Accentrando più di una responsabilità in un'unica classe, si crea rigidità e "accoppiamento" (coupling) di un comportamento con un altro, e il cambio di
- requisiti di uno dei comportamenti potrebbe sfociare in una modifica alla stessa classe e possibilmente anche a porzioni di codice che non interessano
- necessariamente all'ambito della modifica. 
- In breve: più i requisiti rischiano di cambiare su una delle responsabilità della classe, più si rende necessario disaccoppiarle
+SRP: Single Responsibility Principle
+"A class should have only one reason to change."
+
+By concentrating multiple responsibilities in a single class, rigidity and coupling between different behaviors are introduced. A change in requirements for one of these behaviors could lead to modifications in the same class and potentially affect parts of the code that are not necessarily related to the intended change.
+
+In short: The more likely it is that requirements will change for one of the class’s responsibilities, the more necessary it becomes to decouple them.
