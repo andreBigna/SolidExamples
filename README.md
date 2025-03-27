@@ -1,7 +1,5 @@
 # SOLID Principles Examples
 
-![SOLID Principles](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/SOLID_Principles.svg/500px-SOLID_Principles.svg.png)
-
 ## Overview
 This repository provides examples demonstrating the **SOLID** principles of software design. The SOLID principles, introduced by Robert C. Martin, are essential guidelines for writing maintainable and scalable object-oriented software.
 
