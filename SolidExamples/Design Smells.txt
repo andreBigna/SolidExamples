@@ -1,11 +1,18 @@
-﻿Design Smells
-Al pari dei Code Smells, non sono veri e propri bug, ma indicano una serie di difetti strutturali che rendono il progetto instabile e difficile da mantenere, oltre ad altre problematiche più sottili.
-Nella fattispecie i Design Smells sono:
-- Rigidity: difficoltà nell'effettuare anche la più piccola modifica, più parti del software sono da adeguare più il software stesso sarà rigido.
-- Fragility: tendenza del software a "rompersi" in punti diversi rispetto a quelli modificati, anche non necessariamente collegati a livello concettuale.
-- Immobility: impossibilità di riutilizzare del codice, potenzialmente utile in altre parti del progetto, perchè troppo rischioso e/o faticoso da rifattorizzare.
-- Viscosity: caratteristica di un software che risulta più facile da modificare senza seguire il design (viscosity of code) oppure senza fare affidamento sull'ambiente di sviluppo perchè inefficiente
-			(viscosity of environment). In poche parole, quando è più facile fare la cosa sbagliata rispetto a quella giusta.
-- Needless Complexity: tipico di quando si vuole anticipare potenziali problemi e/o cambiamenti di requisiti, sovraccarica il software di strutture non utilizzate e quindi inutili.
-- Needless Repetition: codice usato alla "copia/incolla", senza essere mai rifattorizzato e creando molteplici possibili divergenze in caso di modifica.
-- Opacity: software scritto in modo poco chiaro, carico di Code Smells, che lo rendono difficile da comprendere e quindi da modificare.
+Design Smells
+Just like Code Smells, they are not actual bugs, but rather a set of structural flaws that make a project unstable and difficult to maintain, along with other more subtle issues.
+
+Specifically, Design Smells include:
+
+    Rigidity: Difficulty in making even the smallest modification— the more parts of the software that need to be adjusted, the more rigid the software becomes.
+
+    Fragility: The tendency of the software to "break" in places other than those modified, even if they are not conceptually related.
+
+    Immobility: The inability to reuse code that could potentially be useful in other parts of the project because it is too risky and/or difficult to refactor.
+
+    Viscosity: A characteristic of software where it is easier to make modifications without following the design (viscosity of code) or without relying on the development environment due to its inefficiency (viscosity of environment). In other words, when it is easier to do the wrong thing than the right one.
+
+    Needless Complexity: This occurs when developers try to anticipate potential problems and/or changes in requirements, overloading the software with unnecessary and unused structures.
+
+    Needless Repetition: Code that is copied and pasted instead of being refactored, creating multiple possible inconsistencies in case of future modifications.
+
+    Opacity: Software written in an unclear way, full of Code Smells, making it difficult to understand and therefore hard to modify.
