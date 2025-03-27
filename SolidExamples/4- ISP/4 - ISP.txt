@@ -1,7 +1,8 @@
-﻿ISP: Interface Segregation Principle
-	"Clients should not be forced to depend upon interfaces that they do not use"
-	Questo principio ha la finalità di favorire la definizione dei contratti in modo più modulare e componibile. Di fatto, tramite la composizione, si possono
-	attribuire alla stessa classe diverse interfacce, abilitando solo i comportamenti che interessano e non necessariamente un insieme più ampio, che ci costringerà
-	ad implementare metodi che non ci interessano. Molto spesso, l'infrazione dell'ISP, genera l'infrazione anche del SRP, visto che nelle interfacce monolitoche è molto
-	probabile trovare attributi di ambiti misti, che andrebbero separati in sotto interfacce. Architetturalmente è molto importante, perchè partendo da una corretta 
-	suddivisione delle interfacce è più facile partire con lo sviluppo, sia esso tramite TDD o no.
+ISP: Interface Segregation Principle
+"Clients should not be forced to depend upon interfaces that they do not use."
+
+The goal of this principle is to encourage a more modular and composable definition of contracts. Through composition, a class can implement multiple interfaces, enabling only the behaviors it actually needs, rather than being forced to implement unnecessary methods due to a broader, monolithic interface.
+
+Violating ISP often leads to a violation of SRP (Single Responsibility Principle) as well. In monolithic interfaces, it is common to find attributes and methods related to mixed concerns, which should instead be separated into smaller, more focused sub-interfaces.
+
+From an architectural perspective, ISP is crucial because starting with a well-structured interface design makes development more efficient—whether using TDD (Test-Driven Development) or not.
